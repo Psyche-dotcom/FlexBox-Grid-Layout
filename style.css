@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Primary color*/
+/*Neutral color*/
+main {
+  width: 100vw;
+  height: 100%;
+  background: #f2f2f2;
+}
+
+@media (min-width: 650px) {
+  main {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 2em;
+  color: #f2f2f2;
+}
+
+@media (min-width: 650px) {
+  section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+button {
+  padding: 1em 2em;
+  border-radius: 2em;
+  outline: none;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+button:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+}
+
+p {
+  line-height: 1.5em;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 650px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+article {
+  width: 90%;
+  max-width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.5em;
+}
+
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (min-width: 650px) {
+  article {
+    height: 450px;
+    padding: 2em;
+  }
+  article div {
+    gap: 2em;
+  }
+}
+
+.first-section {
+  background-color: #e38826;
+}
+
+.first-section button {
+  color: #e38826;
+}
+
+.first-section button:hover {
+  color: #f2f2f2;
+}
+
+.second-section {
+  background-color: #006970;
+}
+
+.second-section button {
+  color: #006970;
+}
+
+.second-section button:hover {
+  color: #f2f2f2;
+}
+
+.third-section {
+  background-color: #004241;
+}
+
+.third-section button {
+  color: #004241;
+}
+
+.third-section button:hover {
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,106 @@
+@import "./reset";
+@import "./variable";
+
+main {
+  width: 100vw;
+  height: 100%;
+  background: $background-headings-buttons;
+  @include medium {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2em;
+  color: $background-headings-buttons;
+  @include medium {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+button {
+  padding: 1em 2em;
+  border-radius: 2em;
+  outline: none;
+  border: none;
+  background-color: $background-headings-buttons;
+  &:hover {
+    color: $background-headings-buttons;
+    background-color: transparent;
+    border: 2px solid $background-headings-buttons;
+  }
+}
+p {
+  line-height: 1.5em;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: $para-color;
+  @include medium {
+    font-size: 1em;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+}
+article {
+  width: 90%;
+  max-width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5em;
+  div {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include medium {
+    height: 450px;
+    padding: 2em;
+    div {
+      gap: 2em;
+    }
+  }
+}
+.first-section {
+  background-color: $BrightOrange;
+  button {
+    color: $BrightOrange;
+    &:hover {
+      color: $background-headings-buttons;
+    }
+  }
+}
+
+.second-section {
+  background-color: $Dark-cyan;
+  button {
+    color: $Dark-cyan;
+    &:hover {
+      color: $background-headings-buttons;
+    }
+  }
+}
+.third-section {
+  background-color: $Very-dark-cyan;
+  button {
+    color: $Very-dark-cyan;
+    &:hover {
+      color: $background-headings-buttons;
+    }
+  }
+}

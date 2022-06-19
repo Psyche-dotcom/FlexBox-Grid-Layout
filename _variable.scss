@@ -1,0 +1,37 @@
+/*Primary color*/
+
+$BrightOrange:hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+
+/*Neutral color*/
+
+$para-color: hsla(0, 0%, 100%, 0.75);
+$background-headings-buttons: hsl(0, 0%, 95%);
+
+$large_screen: 900px;
+
+$medium_screen: 650px;
+$medium_screenm: 1000px;
+$medium_screenl: 1300px;
+
+@mixin large {
+    @media (min-width: $large_screen){
+        @content
+    }
+};
+@mixin medium {
+    @media (min-width: $medium_screen){
+        @content
+    }
+};
+@mixin mmedium {
+    @media (max-width: $medium_screenm){
+        @content
+    }
+};
+@mixin lmedium {
+    @media (min-width: $medium_screenl){
+        @content
+    }
+}
