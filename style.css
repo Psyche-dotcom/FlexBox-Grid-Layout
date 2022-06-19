@@ -7,10 +7,13 @@
 
 /*Primary color*/
 /*Neutral color*/
+body {
+  background: #f2f2f2;
+}
+
 main {
   width: 100vw;
   height: 100%;
-  background: #f2f2f2;
 }
 
 @media (min-width: 650px) {
@@ -25,7 +28,48 @@ main {
   }
 }
 
-section {
+.all-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-button {
+  background-color: #e38826;
+  color: white;
+}
+
+.grid-button:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  color: #e38826;
+  border: 2px solid #e38826;
+}
+
+.ongrid-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4em;
+}
+
+.card-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +86,7 @@ section {
 }
 
 @media (min-width: 650px) {
-  section {
+  .card-section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -72,9 +116,9 @@ button:hover {
 
 p {
   line-height: 1.5em;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -86,7 +130,7 @@ p {
 
 h1 {
   text-transform: uppercase;
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -169,5 +213,51 @@ article div {
 
 .third-section button:hover {
   color: #f2f2f2;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(auto, 150px))[5];
+      grid-template-columns: repeat(5, minmax(auto, 150px));
+  -ms-grid-rows: (minmax(auto, 150px))[4];
+      grid-template-rows: repeat(4, minmax(auto, 150px));
+  gap: 10px;
+  place-content: center;
+}
+
+.grid-container section {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container .grid-item-1 {
+  background-color: #006970;
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+.grid-container .grid-item-2 {
+  background-color: #e38826;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.grid-container .grid-item-3 {
+  background-color: #e38826;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.grid-container .grid-item-4 {
+  background-color: #004241;
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.grid-container .grid-item-5 {
+  background-color: #004241;
+  grid-column: span 3;
+  grid-row: span 1;
 }
 /*# sourceMappingURL=style.css.map */
